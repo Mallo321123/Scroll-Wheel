@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AS5600")(type "KiCad")(uri "${KIPRJMOD}/Librarys/AS5600.pretty")(options "")(descr ""))
+  (lib (name "SO_ADY-T1-GE3_VIS")(type "KiCad")(uri "${KIPRJMOD}/Librarys/SO_ADY-T1-GE3_VIS.pretty")(options "")(descr ""))
+  (lib (name "SOT-23-6L_TCP")(type "KiCad")(uri "${KIPRJMOD}/Librarys/SOT-23-6L_TCP.pretty")(options "")(descr ""))
+  (lib (name "Tag-Connect")(type "KiCad")(uri "${KIPRJMOD}/Librarys/Tag-Connect.pretty")(options "")(descr ""))
+)
