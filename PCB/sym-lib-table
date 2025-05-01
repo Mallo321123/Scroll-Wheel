@@ -4,4 +4,5 @@
   (lib (name "FS8205A")(type "KiCad")(uri "${KIPRJMOD}/Librarys/FS8205A.kicad_sym")(options "")(descr ""))
   (lib (name "HUSB238")(type "KiCad")(uri "${KIPRJMOD}/Librarys/HUSB238.kicad_sym")(options "")(descr ""))
   (lib (name "Tag-Connect")(type "KiCad")(uri "${KIPRJMOD}/Librarys/Tag-Connect.kicad_sym")(options "")(descr ""))
+  (lib (name "BQ25172")(type "KiCad")(uri "${KIPRJMOD}/Librarys/BQ25172.kicad_sym")(options "")(descr ""))
 )

@@ -4,4 +4,5 @@
   (lib (name "SO_ADY-T1-GE3_VIS")(type "KiCad")(uri "${KIPRJMOD}/Librarys/SO_ADY-T1-GE3_VIS.pretty")(options "")(descr ""))
   (lib (name "SOT-23-6L_TCP")(type "KiCad")(uri "${KIPRJMOD}/Librarys/SOT-23-6L_TCP.pretty")(options "")(descr ""))
   (lib (name "Tag-Connect")(type "KiCad")(uri "${KIPRJMOD}/Librarys/Tag-Connect.pretty")(options "")(descr ""))
+  (lib (name "BQ25172")(type "KiCad")(uri "${KIPRJMOD}/Librarys/BQ25172.pretty")(options "")(descr ""))
 )
