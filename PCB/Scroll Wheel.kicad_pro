@@ -504,7 +504,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Scroll Wheel.step",
+      "step": "../CAD/Scroll Wheel.step",
       "svg": "",
       "vrml": ""
     },
