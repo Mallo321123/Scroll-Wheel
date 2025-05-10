@@ -3,6 +3,8 @@
 #include <BLEServer.h>
 #include <BLEUtils.h>
 #include <BLE2902.h>
+#include <Wire.h>
+#include <AS5600.h>
 
 #define FIRMWARE_VERSION "0.1.0"
 
@@ -16,10 +18,17 @@
 #define SCROLL_UPDATE_INTERVAL 100 // Interval for scroll value update in ms
 
 #define BATTERY_UPDATE_INTERVAL 5000 // Set battery update interval in s
-#define BATTERY_SENSE_PIN 35         // ADC-Pin for Battery Voltage
 #define BATTERY_MAX_VOLTAGE 4.2      // Maximal Battery Voltage
 #define BATTERY_MIN_VOLTAGE 3.3      // Minimal Battery Voltage
 #define BATTERY_VALUE_CORRECTION 1   // Battery value correction
+
+#define PWR_SW_PIN 15 // Needs to be high for device to stay on
+#define BATTERY_SENSE_PIN 32 // ADC pin for battery voltage sensing
+#define POWER_SENSE_PIN 14   // ADC pin for sensing connected USB
+#define CHARGE_STATE_SENSE_PIN 13 // ADC pin for sensing charge state
+
+#define SCROLL_MULTIPLICATOR 1 // Multiplier for scroll value
+#define JITTER_THRESHOLD 0.5 // Threshold for jitter in scroll angle
 
 BLEServer *pServer = NULL;
 BLECharacteristic *pTxCharacteristic = NULL;
@@ -27,6 +36,10 @@ bool deviceConnected = false;
 bool oldDeviceConnected = false;
 unsigned long lastScrollUpdate = 0;
 unsigned long lastBatteryTime = 0;
+
+float angle_before = 380.0; // Initial angle
+
+AS5600 encoder;
 
 // Callback for BLE server connection
 class MyServerCallbacks : public BLEServerCallbacks
@@ -53,7 +66,7 @@ class MyCallbacks : public BLECharacteristicCallbacks
 
     if (rxValue.length() > 0)
     {
-      Serial.println("Empfangen von Client:");
+      Serial.println("Recieved from client:");
       for (int i = 0; i < rxValue.length(); i++)
       {
         Serial.print(rxValue[i]);
@@ -84,17 +97,53 @@ int getBatteryLevel()
 
 int getScrollValue()
 {
-  return 30;
+  int rawAngle = encoder.readAngle(); // Value between 0 and 4095 (12-bit)
+  float angleDeg = rawAngle * 360.0 / 4096.0;
+
+  // set first angle after boot
+  if (angle_before == 380.0)
+  {
+    angle_before = angleDeg;
+  }
+
+  float angleDiff = angleDeg - angle_before;
+
+  if (fabs(angleDiff) < JITTER_THRESHOLD)
+  {
+    return 0; // Ignore small changes
+  }
+
+  // Handle wrap-around at 0/360 degrees
+  if (angleDiff > 180.0) {
+    angleDiff -= 360.0;
+  } else if (angleDiff < -180.0) {
+    angleDiff += 360.0;
+  }
+
+  // Store current angle for next comparison
+  angle_before = angleDeg;
+
+  // Scale and round the value as needed
+  int scrollValue = round(angleDiff * SCROLL_MULTIPLICATOR);
+
+  return scrollValue;
 }
 
 void setup()
 {
+  pinMode(PWR_SW_PIN, OUTPUT);
+  digitalWrite(PWR_SW_PIN, HIGH); // Set PWR_SW_PIN high to keep the device on
+
   Serial.begin(115200);
   Serial.println("Scroll Wheel version " FIRMWARE_VERSION);
   Serial.println("Initializing...");
 
   pinMode(BATTERY_SENSE_PIN, INPUT);
+  pinMode(POWER_SENSE_PIN, INPUT);
+  pinMode(CHARGE_STATE_SENSE_PIN, INPUT);
   analogReadResolution(12);
+
+  Wire.begin(22, 21);
 
   // BLE Initialisation
   BLEDevice::init("Scroll Wheel");
@@ -131,6 +180,14 @@ void setup()
   pAdvertising->setMaxPreferred(0x12);*/
 
   BLEDevice::startAdvertising();
+
+  if (!encoder.begin())
+  {
+    Serial.println("Rotary encoder not found!");
+    while (1);
+  }
+  Serial.println("Encoder initialized");
+
   Serial.println("Scroll Wheel ready, waiting for client...");
 }
 
