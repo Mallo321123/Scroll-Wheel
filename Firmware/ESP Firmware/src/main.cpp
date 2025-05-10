@@ -12,6 +12,8 @@
 #define CHARACTERISTIC_RX "6E400002-B5A3-F393-E0A9-E50E24DCCA9E" // RX Characteristic
 #define CHARACTERISTIC_TX "6E400003-B5A3-F393-E0A9-E50E24DCCA9E" // TX Characteristic
 
+#define BLE_DEVICE_NAME "Scroll Wheel" // Name of the BLE device
+
 #define LOOP_SLEEP_TIME 10        // Sleep time in ms
 #define RECONNECT_SLEEP_TIME 1000 // Sleep time in ms
 
@@ -29,6 +31,7 @@
 
 #define SCROLL_MULTIPLICATOR 1 // Multiplier for scroll value
 #define JITTER_THRESHOLD 0.5 // Threshold for jitter in scroll angle
+#define MAX_ROTATION_PER_READ 180 // Maximal rotation per read in degrees
 
 BLEServer *pServer = NULL;
 BLECharacteristic *pTxCharacteristic = NULL;
@@ -114,9 +117,9 @@ int getScrollValue()
   }
 
   // Handle wrap-around at 0/360 degrees
-  if (angleDiff > 180.0) {
+  if (angleDiff > MAX_ROTATION_PER_READ) {
     angleDiff -= 360.0;
-  } else if (angleDiff < -180.0) {
+  } else if (angleDiff < -MAX_ROTATION_PER_READ) {
     angleDiff += 360.0;
   }
 
@@ -146,7 +149,7 @@ void setup()
   Wire.begin(22, 21);
 
   // BLE Initialisation
-  BLEDevice::init("Scroll Wheel");
+  BLEDevice::init(BLE_DEVICE_NAME);
 
   // Create Server
   pServer = BLEDevice::createServer();
