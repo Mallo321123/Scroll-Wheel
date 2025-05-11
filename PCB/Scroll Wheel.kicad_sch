@@ -5574,18 +5574,6 @@
 		(uuid "22491e43-a904-4e59-8d0a-bf568e0266df")
 	)
 	(junction
-		(at 130.81 251.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2e3965b9-bd3d-47ad-9dfc-ab2ea4a64051")
-	)
-	(junction
-		(at 101.6 251.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2fedfaf7-e6b5-4302-8ad1-5fa84e2ff39e")
-	)
-	(junction
 		(at 344.17 238.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5662,12 +5650,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83046d49-4a2b-46d8-9d18-5f6a7450ca19")
-	)
-	(junction
-		(at 96.52 251.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ccebf24b-4d57-4964-9bb8-e3ba747a81d4")
 	)
 	(junction
 		(at 209.55 215.9)
@@ -5767,6 +5749,16 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 135.89) (xy 274.32 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a90ae44-42e5-432b-9cb1-b5d3e17ac108")
+	)
+	(wire
+		(pts
 			(xy 208.28 125.73) (xy 200.66 125.73)
 		)
 		(stroke
@@ -5785,6 +5777,16 @@
 			(color 0 0 255 1)
 		)
 		(uuid "0c06bfad-5902-4f11-b95e-e40c86bf6ffc")
+	)
+	(wire
+		(pts
+			(xy 284.48 124.46) (xy 281.94 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f22bb76-995f-4ab0-9056-64f1115233e8")
 	)
 	(wire
 		(pts
@@ -5918,6 +5920,16 @@
 	)
 	(wire
 		(pts
+			(xy 292.1 124.46) (xy 294.64 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22e53fcc-0716-43d3-96b0-e06daa0cb0d5")
+	)
+	(wire
+		(pts
 			(xy 107.95 118.11) (xy 115.57 118.11)
 		)
 		(stroke
@@ -5935,16 +5947,6 @@
 			(type default)
 		)
 		(uuid "2ff5e881-af01-403c-bd0d-055cf931e873")
-	)
-	(wire
-		(pts
-			(xy 109.22 261.62) (xy 101.6 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "313596d3-6090-4589-91f8-5a87248a65f4")
 	)
 	(polyline
 		(pts
@@ -5969,13 +5971,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 251.46) (xy 116.84 251.46)
+			(xy 114.3 44.45) (xy 119.38 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33829b78-2434-4d20-83c0-4be36c72bbae")
+		(uuid "371c5715-31dc-40f6-abba-23616a636be0")
 	)
 	(polyline
 		(pts
@@ -6174,13 +6176,13 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 247.65) (xy 96.52 251.46)
+			(xy 271.78 124.46) (xy 274.32 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5fbca614-7863-4a66-96cf-2030b285d2bb")
+		(uuid "5f5a574e-15fd-4cb3-a179-3b0a015fe6b3")
 	)
 	(wire
 		(pts
@@ -6262,16 +6264,6 @@
 			(type default)
 		)
 		(uuid "6f7b1efc-47f6-4fd0-9f56-82777c0ce314")
-	)
-	(wire
-		(pts
-			(xy 96.52 251.46) (xy 101.6 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7005806b-2880-445c-9014-42aff9b1e0a8")
 	)
 	(polyline
 		(pts
@@ -6448,16 +6440,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 261.62) (xy 101.6 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e808c75-a77a-4210-8357-65c6b07e49aa")
-	)
-	(wire
-		(pts
 			(xy 195.58 41.91) (xy 195.58 44.45)
 		)
 		(stroke
@@ -6535,6 +6517,16 @@
 			(type default)
 		)
 		(uuid "ad22fd55-f299-4535-85d8-36cd258a0846")
+	)
+	(wire
+		(pts
+			(xy 284.48 135.89) (xy 281.94 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad6ac37c-bcef-479c-a175-6d50aeea2a17")
 	)
 	(wire
 		(pts
@@ -6732,16 +6724,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 261.62) (xy 116.84 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc7469b9-b90a-470f-96e8-eded27e28578")
-	)
-	(wire
-		(pts
 			(xy 205.74 229.87) (xy 205.74 238.76)
 		)
 		(stroke
@@ -6813,16 +6795,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 251.46) (xy 130.81 261.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e538f2d1-a8e7-4980-be03-5496723a3df4")
-	)
-	(wire
-		(pts
 			(xy 184.15 125.73) (xy 184.15 127)
 		)
 		(stroke
@@ -6863,13 +6835,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 251.46) (xy 109.22 251.46)
+			(xy 294.64 135.89) (xy 292.1 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3e9520e-a723-43c4-84e5-f9a8fef20a90")
+		(uuid "f429595e-e498-4ee8-a46f-94d1c65a6a01")
 	)
 	(wire
 		(pts
@@ -7141,6 +7113,28 @@
 			)
 		)
 	)
+	(global_label "LED"
+		(shape input)
+		(at 294.64 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4c877124-256e-49e4-a3f7-649a7fdfc71b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 301.0723 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDA"
 		(shape input)
 		(at 187.96 67.31 0)
@@ -7297,7 +7291,7 @@
 	)
 	(global_label "STATE"
 		(shape input)
-		(at 96.52 247.65 0)
+		(at 96.52 251.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7307,7 +7301,7 @@
 		)
 		(uuid "ba89eb87-2aad-42e0-be6f-332435bd7a95")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.8875 247.65 0)
+			(at 104.8875 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7335,6 +7329,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED"
+		(shape input)
+		(at 114.3 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd314543-796e-4f9c-b189-13b1b3ec0816")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.8677 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7805,6 +7821,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -8128,6 +8145,83 @@
 			(project ""
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 288.29 135.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "141d6422-7b3f-4fe2-92ac-5558fa79adcc")
+		(property "Reference" "R2"
+			(at 288.29 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "56"
+			(at 288.29 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 288.29 137.668 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 288.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 288.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 288.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8447ab05-ff79-45e3-9e3e-c0d247f50759")
+		)
+		(pin "1"
+			(uuid "036f5eaf-4c45-471a-9f29-5d20c64d703d")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8740,6 +8834,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 271.78 124.46 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32622a56-44ab-4d62-9ffc-a49d0fdea583")
+		(property "Reference" "#PWR010"
+			(at 265.43 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 271.78 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c68f935-6bd4-4d8c-bc57-6f280ad21fc7")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 99.06 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9272,33 +9433,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 127 261.62 90)
+		(lib_id "power:+3.3V")
+		(at 294.64 135.89 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "56608a0a-fff2-4245-8d07-24797f36fd5c")
-		(property "Reference" "R25"
-			(at 127 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 127 257.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 127 263.398 90)
+		(uuid "572d38bc-2d14-47e6-9052-aae0e50799c1")
+		(property "Reference" "#PWR038"
+			(at 290.83 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9306,8 +9451,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 127 261.62 0)
+		(property "Value" "+3.3V"
+			(at 298.45 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9315,8 +9469,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 127 261.62 0)
+		(property "Datasheet" ""
+			(at 294.64 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9324,25 +9478,22 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C11702"
-			(at 127 261.62 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 294.64 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "2fed00aa-a01e-47a3-b870-1ca822730e95")
 		)
 		(pin "1"
-			(uuid "0abb1a20-0b48-4bbf-83d9-09eba7e1c488")
+			(uuid "2cee9512-a131-4d9a-aff7-35d1212178b3")
 		)
 		(instances
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "R25")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9487,73 +9638,6 @@
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDC")
-		(at 130.81 251.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "618e263d-a854-4d84-861d-e2cbbe0ae600")
-		(property "Reference" "#PWR015"
-			(at 127 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDC"
-			(at 134.62 251.4599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 130.81 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acf25b49-4828-4b2b-beaf-86f4c3d3660b")
-		)
-		(instances
-			(project "Scroll Wheel"
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9780,6 +9864,83 @@
 			(project ""
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 288.29 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64f58329-f550-47f8-bb6f-f18a1867842a")
+		(property "Reference" "R1"
+			(at 288.29 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "56"
+			(at 288.29 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 288.29 126.238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 288.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 288.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 288.29 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6273b5c6-1bdc-4df9-8d3c-4b84a7e12229")
+		)
+		(pin "1"
+			(uuid "0670d25b-73ae-4486-a1b8-e3b246e2925b")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -10493,6 +10654,159 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 271.78 135.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86a263b9-e105-4c01-a183-81d4a5f801c8")
+		(property "Reference" "#PWR011"
+			(at 265.43 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 135.8899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 271.78 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "007882bf-b881-45e1-a21e-a4f5883d980d")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 278.13 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8781a03a-9bc9-47a0-b226-fc35b0c56326")
+		(property "Reference" "D6"
+			(at 276.5425 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 276.5425 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_0402_1005Metric"
+			(at 278.13 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 278.13 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 278.13 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C397045"
+			(at 278.13 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fa96b1fb-bcf9-420f-a3ea-33f4e9d79ba5")
+		)
+		(pin "1"
+			(uuid "deacccfb-9a0f-4c70-8987-58bf8cb41b44")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 43.18 262.89 180)
 		(unit 1)
@@ -11004,83 +11318,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 127 251.46 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9b2e95b-e1b3-4d45-a8b9-dd43514a21e2")
-		(property "Reference" "R19"
-			(at 127 245.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 127 247.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 127 253.238 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 127 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C11702"
-			(at 127 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d7ffdb4d-538d-4021-ae4f-12e2fe661d53")
-		)
-		(pin "1"
-			(uuid "0e18c3f5-79fb-4480-9e83-bf0de1f26aa1")
-		)
-		(instances
-			(project "Scroll Wheel"
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 54.61 130.81 90)
 		(unit 1)
@@ -11213,92 +11450,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 113.03 261.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b29a1415-3a56-4987-9451-685d78e311ed")
-		(property "Reference" "D4"
-			(at 111.4425 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 111.4425 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_0402_1005Metric"
-			(at 113.03 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 113.03 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C397045"
-			(at 113.03 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c196d8d2-1150-4b24-b856-e51f395df68f")
-		)
-		(pin "1"
-			(uuid "873e0df9-a8fe-404d-971b-8ebdeba9c4b5")
-		)
-		(instances
-			(project "Scroll Wheel"
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDC")
 		(at 209.55 250.19 270)
 		(unit 1)
@@ -11359,6 +11510,92 @@
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 278.13 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bafacfdf-d990-4bb3-ab3f-b5feb5b32ede")
+		(property "Reference" "D2"
+			(at 276.5425 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 276.5425 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_0402_1005Metric"
+			(at 278.13 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 278.13 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 278.13 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 278.13 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C397045"
+			(at 278.13 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "869a89a6-154a-43d1-89d7-ea0ca70b7585")
+		)
+		(pin "1"
+			(uuid "4d09a6e7-a6af-4f6e-b9ed-658fe7efbd40")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12274,92 +12511,6 @@
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 113.03 251.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da4fb349-a3a6-4641-ac17-a6f58fd119e5")
-		(property "Reference" "D1"
-			(at 111.4425 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 111.4425 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_0402_1005Metric"
-			(at 113.03 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 113.03 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C397045"
-			(at 113.03 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e968e8e3-e5b6-4252-90f5-725715934fcb")
-		)
-		(pin "1"
-			(uuid "8f18bde7-2e8a-4186-8d2b-7a633f1daeb5")
-		)
-		(instances
-			(project ""
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "D1")
 					(unit 1)
 				)
 			)
