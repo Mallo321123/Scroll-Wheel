@@ -12163,19 +12163,21 @@
 		(fields_autoplaced yes)
 		(uuid "c1c985ef-a815-4497-9a15-758df4d3a30e")
 		(property "Reference" "R17"
-			(at 25.4 255.27 90)
+			(at 34.29 253.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "330"
-			(at 27.94 255.27 90)
+		(property "Value" "680"
+			(at 34.29 256.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
@@ -12205,7 +12207,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C105875"
+		(property "LCSC" "C137948"
 			(at 31.75 255.27 0)
 			(effects
 				(font
