@@ -5197,131 +5197,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -5775,6 +5650,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "979b21b2-ad25-491c-a994-90894349adfd")
+	)
+	(junction
+		(at 344.17 242.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d55f9719-86ad-4cca-8fec-1aa5ba1835bd")
 	)
 	(junction
 		(at 209.55 215.9)
@@ -6317,7 +6198,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5807d3c1-c841-421c-9c32-714902e6f55c")
+		(uuid "57c60723-8a58-4a4d-a0c3-c8bd762ae999")
 	)
 	(wire
 		(pts
@@ -6532,6 +6413,16 @@
 			(type default)
 		)
 		(uuid "8827597d-33bf-4550-a3fe-bc4521511da4")
+	)
+	(wire
+		(pts
+			(xy 344.17 245.11) (xy 344.17 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a220458-024c-4d64-9df5-44a52e22d090")
 	)
 	(wire
 		(pts
@@ -7472,7 +7363,7 @@
 	)
 	(global_label "STATE"
 		(shape input)
-		(at 274.32 262.89 270)
+		(at 261.62 262.89 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7482,7 +7373,7 @@
 		)
 		(uuid "9ad85735-b3ef-4162-b367-e76db6465da4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 274.32 271.2575 90)
+			(at 261.62 271.2575 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7571,6 +7462,28 @@
 		(uuid "babf8030-3dd7-4d13-84a3-cac937d73be1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 190.5823 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RX"
+		(shape input)
+		(at 185.42 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c76f4611-d031-45d2-bdfc-66ea3909fc06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.8847 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7942,72 +7855,6 @@
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 261.62 262.89 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04d0b961-fa36-4d5b-8352-f4716effaf7e")
-		(property "Reference" "#PWR044"
-			(at 261.62 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 261.62 267.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 261.62 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 261.62 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9cd72c8-ff96-49a5-8132-79dd83f6b0f2")
-		)
-		(instances
-			(project "Scroll Wheel"
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8825,7 +8672,7 @@
 				)
 			)
 		)
-		(property "Value" "56"
+		(property "Value" "150"
 			(at 288.29 132.08 90)
 			(effects
 				(font
@@ -8860,7 +8707,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C138054"
 			(at 288.29 135.89 0)
 			(effects
 				(font
@@ -9358,72 +9205,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 106.68 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c1822e7-1ff7-4f30-a079-ecb3031f55ec")
-		(property "Reference" "#PWR021"
-			(at 106.68 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 106.68 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 106.68 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "66d4d3c2-8e74-48a3-91ab-2cea424c8e0f")
-		)
-		(instances
-			(project "Scroll Wheel"
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 26.67 73.66 0)
 		(unit 1)
@@ -9557,6 +9338,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDC")
+		(at 106.68 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34b48952-b0e9-46d9-89a5-61ece2b61c56")
+		(property "Reference" "#PWR021"
+			(at 106.68 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDC"
+			(at 106.68 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDC\""
+			(at 106.68 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65718c03-d90b-4a2e-8bc5-d1166838cf66")
+		)
+		(instances
+			(project ""
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 41.91 229.87 180)
 		(unit 1)
@@ -9630,6 +9477,72 @@
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 344.17 245.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38d846fa-2c14-48f3-84a0-97b036926086")
+		(property "Reference" "#PWR045"
+			(at 344.17 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 344.17 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 344.17 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 344.17 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7eda755-952b-4ab0-a18e-35139d7dfec3")
+		)
+		(instances
+			(project "Scroll Wheel"
+				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -10681,7 +10594,7 @@
 				)
 			)
 		)
-		(property "Value" "56"
+		(property "Value" "150"
 			(at 288.29 120.65 90)
 			(effects
 				(font
@@ -10716,7 +10629,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25744"
+		(property "LCSC" "C138054"
 			(at 288.29 124.46 0)
 			(effects
 				(font
@@ -11229,73 +11142,6 @@
 			(project "Scroll Wheel"
 				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 261.62 262.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "780200b1-f604-40ef-bc97-eecd0df83b1c")
-		(property "Reference" "TP4"
-			(at 264.16 258.3179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5V"
-			(at 264.16 260.8579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 266.7 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 266.7 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 261.62 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96d9730b-3ca8-40d3-9561-6ad0bbc4095a")
-		)
-		(instances
-			(project "Scroll Wheel"
-				(path "/c420c785-f46f-41f2-8236-5ef500ef177b"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -13830,7 +13676,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 274.32 262.89 0)
+		(at 261.62 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13839,7 +13685,7 @@
 		(fields_autoplaced yes)
 		(uuid "df9326b3-7e73-4653-adf4-bd8654d7645b")
 		(property "Reference" "TP5"
-			(at 276.86 258.3179 0)
+			(at 264.16 258.3179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13848,7 +13694,7 @@
 			)
 		)
 		(property "Value" "State"
-			(at 276.86 260.8579 0)
+			(at 264.16 260.8579 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13857,7 +13703,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 279.4 262.89 0)
+			(at 266.7 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13866,7 +13712,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 279.4 262.89 0)
+			(at 266.7 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13875,7 +13721,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 274.32 262.89 0)
+			(at 261.62 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
