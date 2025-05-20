@@ -24,13 +24,13 @@
 #define BATTERY_MIN_VOLTAGE 3.3      // Minimal Battery Voltage
 #define BATTERY_VALUE_CORRECTION 1   // Battery value correction
 
-#define PWR_SW_PIN 15 // Needs to be high for device to stay on
-#define BATTERY_SENSE_PIN 32 // ADC pin for battery voltage sensing
-#define POWER_SENSE_PIN 14   // ADC pin for sensing connected USB
+#define PWR_SW_PIN 15             // Needs to be high for device to stay on
+#define BATTERY_SENSE_PIN 32      // ADC pin for battery voltage sensing
+#define POWER_SENSE_PIN 14        // ADC pin for sensing connected USB
 #define CHARGE_STATE_SENSE_PIN 13 // ADC pin for sensing charge state
 
-#define SCROLL_MULTIPLICATOR 1 // Multiplier for scroll value
-#define JITTER_THRESHOLD 0.5 // Threshold for jitter in scroll angle
+#define SCROLL_MULTIPLICATOR 1    // Multiplier for scroll value
+#define JITTER_THRESHOLD 0.5      // Threshold for jitter in scroll angle
 #define MAX_ROTATION_PER_READ 180 // Maximal rotation per read in degrees
 
 BLEServer *pServer = NULL;
@@ -117,9 +117,12 @@ int getScrollValue()
   }
 
   // Handle wrap-around at 0/360 degrees
-  if (angleDiff > MAX_ROTATION_PER_READ) {
+  if (angleDiff > MAX_ROTATION_PER_READ)
+  {
     angleDiff -= 360.0;
-  } else if (angleDiff < -MAX_ROTATION_PER_READ) {
+  }
+  else if (angleDiff < -MAX_ROTATION_PER_READ)
+  {
     angleDiff += 360.0;
   }
 
@@ -187,7 +190,8 @@ void setup()
   if (!encoder.begin())
   {
     Serial.println("Rotary encoder not found!");
-    while (1);
+    while (1)
+      ;
   }
   Serial.println("Encoder initialized");
 
@@ -204,11 +208,15 @@ void loop()
     // read sensor value
     int value = getScrollValue();
     char buffer[32];
-    snprintf(buffer, sizeof(buffer), "SCR:%d", value);
 
-    // Send value as notification
-    pTxCharacteristic->setValue(buffer);
-    pTxCharacteristic->notify();
+    if (!(value == 0))
+    {
+      snprintf(buffer, sizeof(buffer), "SCR:%d", value);
+
+      // Send value as notification
+      pTxCharacteristic->setValue(buffer);
+      pTxCharacteristic->notify();
+    }
   }
 
   // Regularly send battery level

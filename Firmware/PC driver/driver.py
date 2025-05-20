@@ -118,31 +118,31 @@ async def run():
 
             # Should be edited in the future für sending configs
             # Start notifications
-            #print("\nActivating notifications...")
-            #await client.start_notify(UART_TX_CHAR_UUID, notification_handler)
-            #print("Notifications active")
+            print("\nActivating notifications...")
+            await client.start_notify(UART_TX_CHAR_UUID, notification_handler)
+            print("Notifications active")
 
-            #while True:
-            #    message = await asyncio.get_event_loop().run_in_executor(
-            #        None, input, "> "
-            #    )
-            #
-            #    if message.lower() == "exit":
-            #        print("Beenden...")
-            #        break
-            #
-            #    try:
-            #        # Nachricht an ESP32 senden
-            #        await client.write_gatt_char(UART_RX_CHAR_UUID, message.encode())
-            #        print(f"Gesendet: {message}")
-            #    except Exception as e:
-            #        print(f"Sendefehler: {e}")
-            #        if "disconnected" in str(e).lower():
-            #            print("Verbindung verloren!")
-            #            break
+            while True:
+               message = await asyncio.get_event_loop().run_in_executor(
+                   None, input, "> "
+               )
+            
+               if message.lower() == "exit":
+                   print("Beenden...")
+                   break
+            
+               try:
+                   # Nachricht an ESP32 senden
+                   await client.write_gatt_char(UART_RX_CHAR_UUID, message.encode())
+                   print(f"Gesendet: {message}")
+               except Exception as e:
+                   print(f"Sendefehler: {e}")
+                   if "disconnected" in str(e).lower():
+                       print("Verbindung verloren!")
+                       break
 
-            ## Benachrichtigungen deaktivieren
-            #await client.stop_notify(UART_TX_CHAR_UUID)
+            # Benachrichtigungen deaktivieren
+            await client.stop_notify(UART_TX_CHAR_UUID)
 
     except BleakError as e:
         error_message = str(e).lower()
