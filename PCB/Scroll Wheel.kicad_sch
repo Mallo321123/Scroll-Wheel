@@ -12995,7 +12995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DSG0008A-IPC_A"
+		(property "Footprint" "BQ25172:DSG0008A-IPC_A"
 			(at 46.99 236.22 0)
 			(effects
 				(font
