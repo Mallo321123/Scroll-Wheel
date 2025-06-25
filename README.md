@@ -35,3 +35,7 @@ Here I am testing the First Firmware version with an external ESP32
 Here is a Picture of the Fully asmblied PCB
 
 <img src="images/pcb-fully-asembled.jpg" alt="PCB Assembled" width="400" />
+
+This is the PCB V2 with lots of improvements and Bugfixes
+
+<img src="images/pcb-new.jpg" alt="PCB Assembled" width="400" />
