@@ -1,66 +1,116 @@
-# Scroll-Wheel
-A big high resolution Scroll wheel inspired by [Engineer Bo](https://www.patreon.com/c/engineerbo/posts)'s [Youtube Video](https://www.youtube.com/watch?v=FSy9G6bNuKA)
+# 🖱️ High-Resolution Scroll Wheel
 
-# This Project is still in an Early Development Phase, use with caution
+> A large, high-resolution scroll wheel inspired by [Engineer Bo](https://www.patreon.com/c/engineerbo/posts)'s [YouTube video](https://www.youtube.com/watch?v=FSy9G6bNuKA).
 
-## Hardware
+---
 
-The main controller is a ESP32 (For now)
+> ⚠️ **Early Development Phase**  
+> This project is still under development. Use at your own risk.
 
-As Magnetic encoder I am using a [AS5600](https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5600-position-sensor)
+---
 
-The Battery Pack is a NiMh S3P2 Pack of Eneloops
+## 📅 Roadmap
 
-## Software
+- [X] BLE HID Support
+- [ ] Mouse Wheel Click Functionality
+- [ ] Automatic power off
+- [ ] Battery Level tuning
+- [ ] Enclosure refinements
+- [ ] Scroll acceleration modes
 
-The Software is made of two parts, the Firmware on the ESP and a Driver for the pc (Linux only) written in Python
+---
 
-The communication is done via a BLE uart connection (I hope I will be able to get a BLE HID interface running soon)
+## 🔧 Hardware Overview
 
-## Required Parts
+- **Main Controller:** ESP32 (subject to maybe change later)
+- **Magnetic Encoder:** [AS5600](https://ams-osram.com/products/sensor-solutions/position-sensors/ams-as5600-position-sensor)
+- **Battery Pack:** S3P2 NiMH Eneloop cells
 
-1. Main PCB (with all components presoldered
-2. Bearing 65x85x10mm
-3. JST GH Cable kit
-4. 7x 3x12mm Cylinder Magnets
-5. 3D Printed Parts
-6. S3P2 NiMh Battery Pack
-7. 5x M2x5 Screws
+---
 
-## Build
+## 💻 Software Architecture
 
-### Preparing the Bearing
+The entire functionality is now handled by a single **ESP32 microcontroller** using **BLE HID** (Human Interface Device) mode.
 
-Most of the Bearings Don't run Smooth enouth at Factory default. To fix this, we are going to remove the grease in the Bearing and replace it with oil.
+- The scroll wheel inputs are directly interpreted by the ESP32.
+- Input data (e.g. rotation) is sent over **Bluetooth Low Energy** as **HID events**, emulating a native scroll device.
+- No additional driver or software is needed on the PC — it works like a standard Bluetooth mouse/scroll input.
 
-1. Remove both bearing sealing Rings
-2. Soak the Bearing in Isopropanol (or any other Greas removing substance)
-3. Scrub out all of the Grease from the Bearing
-4. Let the Bearing dry for about 3 Hours
-5. Put one of the sealing rings back in place
-6. Put a bunch of Oil inside the bearing
-7. Push the Second Sealing ring back in place
-8. Give the bearing a bunch of good spinns, to spread out the Oil
-9. (Optional) Take the Seals back out, for a smoother spin
+> ✅ This simplifies the setup significantly and increases compatibility across Linux, Windows, and macOS.
 
-## Development Progress
 
-Here you can see the First PCB-prototype, with a bunch of Bugs
+---
 
+## 🧩 Required Components
+
+| Part                             | Quantity |
+|----------------------------------|----------|
+| Main PCB (pre-soldered)          | 1        |
+| Bearing (65×85×10 mm)            | 1        |
+| JST GH Cable Kit                 | 1 set    |
+| Cylinder Magnets (3×12 mm)       | 7        |
+| 3D-Printed Parts                 | 3        |
+| S3P2 NiMH Battery Pack           | 1        |
+| M2×5 Screws                      | 5        |
+
+---
+
+## 🛠️ Build Guide
+
+### 🔄 Bearing Preparation
+
+Factory bearings may feel stiff due to thick grease. Here's how to optimize smoothness:
+
+1. Remove both sealing rings.
+2. Soak the bearing in **isopropyl alcohol** (or another grease remover).
+3. Scrub out all remaining grease.
+4. Let it dry for ~3 hours.
+5. Reinstall **one** sealing ring.
+6. Add **light machine oil** generously into the bearing.
+7. Reinstall the **second** sealing ring.
+8. Spin the bearing multiple times to distribute the oil.
+9. *(Optional)* Remove the seals again for an even smoother feel (at the cost of dust protection).
+
+---
+
+## 🚧 Development Gallery
+
+### 🔌 First PCB Prototype (with known bugs)
 <img src="images/pcb-prototype.jpg" alt="First PCB prototype" width="300" />
 
-Here is the Prototype PCB in the Case
+---
 
+### 🧱 PCB Inside the Case
 <img src="images/PCB-in-case.jpg" alt="PCB Prototype in case" width="400" />
 
-Here I am testing the First Firmware version with an external ESP32
+---
 
+### 🧪 First Firmware Test (External ESP32)
 <img src="images/first-firmware-test.jpg" alt="Firmware test" width="400" />
 
-Here is a Picture of the Fully asmblied PCB
+---
 
+### 🧰 Fully Assembled PCB
 <img src="images/pcb-fully-asembled.jpg" alt="PCB Assembled" width="400" />
 
-This is the PCB V2 with lots of improvements and Bugfixes
+---
 
-<img src="images/pcb-new.jpg" alt="PCB Assembled" width="400" />
+### 🆕 PCB V2 – Improved & Debugged
+<img src="images/pcb-new.png" alt="PCB V2" width="400" />
+
+---
+
+## 🤝 Contributing
+
+Pull requests, suggestions, and feedback are always welcome — feel free to get involved and help improve the project!  
+Prototyping and hardware development can get expensive quickly, so if you’d like to support the project financially:
+
+<a href="https://www.paypal.me/MarioLanghammer" target="_blank">
+  <img src="https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal Donation" />
+</a>
+&nbsp;
+<a href="https://ko-fi.com/mallo321123" target="_blank">
+  <img src="https://img.shields.io/badge/Ko--fi-Support_Me-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi Support" />
+</a>
+
+Every bit helps keep the ideas (and soldering irons) running!
