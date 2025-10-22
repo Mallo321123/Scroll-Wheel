@@ -114,3 +114,6 @@ Prototyping and hardware development can get expensive quickly, so if you’d li
 </a>
 
 Every bit helps keep the ideas (and soldering irons) running!
+
+## Credits
+Credits to [T-vk](https://github.com/T-vK) for creating the [ESP32 BLE Mouse](https://github.com/T-vK/ESP32-BLE-Mouse) Library
