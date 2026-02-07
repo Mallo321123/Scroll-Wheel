@@ -4,6 +4,10 @@
 
 ---
 
+## [Documentation](https://wiki.mariolanghammer.de/en/Projects/Scroll-Wheel)
+
+---
+
 > ⚠️ **Early Development Phase**  
 > This project is still under development. Use at your own risk.
 
